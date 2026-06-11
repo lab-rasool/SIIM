@@ -92,7 +92,7 @@ you need before trusting extraction in production.
 Point either script at a different server with `--host` or the `OLLAMA_HOST`
 environment variable.
 
-## Scaling up with vLLM (slide 16)
+## Scaling up with vLLM
 
 ```bash
 pip install vllm
