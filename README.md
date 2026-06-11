@@ -32,7 +32,7 @@ machine, and no real patient data or PHI is used anywhere in this repo.**
 Free accounts: [Hugging Face](https://huggingface.co/join) · [GitHub](https://github.com/signup)
 
 Software:
-- **Git**, **Python 3.10+**
+- **Git**, **Python 3.11+**
 - **Ollama** — https://ollama.com/download
 - **OpenWebUI** — `pip3 install open-webui` (needs Python 3.11)
 - **vLLM** (optional, for the scaling section) — `pip install vllm`
