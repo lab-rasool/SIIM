@@ -34,7 +34,7 @@ Free accounts: [Hugging Face](https://huggingface.co/join) · [GitHub](https://g
 Software:
 - **Git**, **Python 3.10+**
 - **Ollama** — https://ollama.com/download
-- **OpenWebUI** — `pip install open-webui` (needs Python 3.11)
+- **OpenWebUI** — `pip3 install open-webui` (needs Python 3.11)
 - **vLLM** (optional, for the scaling section) — `pip install vllm`
 
 Clone this repo:
