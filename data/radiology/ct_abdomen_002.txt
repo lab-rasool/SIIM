@@ -1,0 +1,24 @@
+SYNTHETIC RADIOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-RAD-0002  |  Patient: SYNTHETIC, PATIENT B  |  MRN: 000-00-0002
+
+EXAM: CT ABDOMEN AND PELVIS WITH CONTRAST
+
+CLINICAL HISTORY: 58-year-old with right upper quadrant pain and abnormal liver
+function tests.
+
+TECHNIQUE: Contrast-enhanced CT of the abdomen and pelvis in the portal venous
+phase.
+
+FINDINGS:
+Liver: A 3.4 cm hypodense lesion is present in hepatic segment VI with peripheral
+nodular enhancement, suspicious for metastasis. No biliary ductal dilatation.
+Pancreas: Normal in size and attenuation. No ductal dilatation.
+Kidneys: Bilateral simple renal cysts, largest 2 cm on the left. No hydronephrosis.
+Bowel: No obstruction. No free air. No free fluid.
+Lymph nodes: A few subcentimeter retroperitoneal nodes, not pathologically enlarged.
+
+IMPRESSION:
+1. 3.4 cm segment VI hepatic lesion with peripheral nodular enhancement,
+   concerning for metastatic disease. MRI with hepatobiliary contrast recommended
+   for further characterization.
+2. Benign bilateral renal cysts.

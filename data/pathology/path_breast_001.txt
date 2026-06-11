@@ -1,0 +1,16 @@
+SYNTHETIC PATHOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-PATH-0001  |  Patient: SYNTHETIC, PATIENT E  |  MRN: 000-00-0011
+
+SPECIMEN: Left breast, core needle biopsy.
+
+CLINICAL HISTORY: Suspicious mass, left breast, 2 o'clock position.
+
+FINAL DIAGNOSIS:
+Left breast, core needle biopsy:
+- INVASIVE DUCTAL CARCINOMA, Nottingham grade 2 (of 3).
+- Associated intermediate-grade ductal carcinoma in situ.
+- Estrogen receptor: POSITIVE (95%). Progesterone receptor: POSITIVE (80%).
+- HER2 by IHC: 1+ (negative).
+
+COMMENT: Tumor size cannot be assessed on core biopsy. Recommend correlation
+with imaging and definitive surgical excision for full staging.

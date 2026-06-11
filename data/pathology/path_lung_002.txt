@@ -1,0 +1,18 @@
+SYNTHETIC PATHOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-PATH-0002  |  Patient: SYNTHETIC, PATIENT F  |  MRN: 000-00-0012
+
+SPECIMEN: Right upper lobe, wedge resection.
+
+CLINICAL HISTORY: Enlarging right upper lobe nodule.
+
+FINAL DIAGNOSIS:
+Lung, right upper lobe, wedge resection:
+- ADENOCARCINOMA, acinar predominant, moderately differentiated.
+- Tumor size: 2.2 cm in greatest dimension.
+- Visceral pleura: not involved.
+- Margins: negative; closest margin 0.8 cm.
+- Lymphovascular invasion: not identified.
+- Pathologic stage (this specimen): pT1c. Lymph nodes not submitted.
+
+COMMENT: Molecular studies for EGFR, ALK, and PD-L1 are pending and will be
+reported in an addendum.

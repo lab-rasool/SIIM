@@ -1,0 +1,17 @@
+SYNTHETIC PATHOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-PATH-0004  |  Patient: SYNTHETIC, PATIENT H  |  MRN: 000-00-0014
+
+SPECIMEN: Prostate, needle core biopsies, six sites.
+
+CLINICAL HISTORY: Elevated PSA, 7.8 ng/mL.
+
+FINAL DIAGNOSIS:
+Prostate, needle biopsies:
+- PROSTATIC ADENOCARCINOMA, acinar type.
+- Gleason score 3 + 4 = 7 (Grade Group 2).
+- Carcinoma present in 3 of 6 cores, involving approximately 25% of total
+  sampled tissue.
+- Perineural invasion: present. Extraprostatic extension: not identified on
+  biopsy material.
+
+COMMENT: Findings should be correlated with PSA and MRI for risk stratification.

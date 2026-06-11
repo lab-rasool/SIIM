@@ -1,0 +1,18 @@
+SYNTHETIC PATHOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-PATH-0003  |  Patient: SYNTHETIC, PATIENT G  |  MRN: 000-00-0013
+
+SPECIMEN: Sigmoid colon, segmental resection.
+
+CLINICAL HISTORY: Obstructing sigmoid mass.
+
+FINAL DIAGNOSIS:
+Colon, sigmoid, segmental resection:
+- INVASIVE ADENOCARCINOMA, moderately differentiated.
+- Tumor invades through the muscularis propria into the subserosa (pT3).
+- 2 of 14 regional lymph nodes positive for metastatic carcinoma (pN1b).
+- Proximal, distal, and radial margins: negative for tumor.
+- Lymphovascular invasion: present.
+- Pathologic stage: pT3 pN1b.
+
+COMMENT: Findings consistent with stage III colonic adenocarcinoma. Mismatch
+repair (MMR) immunohistochemistry is recommended and pending.

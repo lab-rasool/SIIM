@@ -1,0 +1,25 @@
+SYNTHETIC RADIOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-RAD-0001  |  Patient: SYNTHETIC, PATIENT A  |  MRN: 000-00-0001
+
+EXAM: CT CHEST WITH CONTRAST
+
+CLINICAL HISTORY: 64-year-old with incidental pulmonary nodule on prior imaging.
+Follow-up to assess for interval change.
+
+TECHNIQUE: Helical CT of the chest was performed following administration of
+intravenous contrast. Axial images were reconstructed at 1.25 mm and 5 mm.
+
+FINDINGS:
+Lungs: There is a 9 mm spiculated nodule in the right upper lobe, previously
+measuring 6 mm, demonstrating interval growth. No additional suspicious
+pulmonary nodules. No pleural effusion. No consolidation.
+Mediastinum: No mediastinal or hilar lymphadenopathy. Heart size normal.
+No pericardial effusion.
+Bones: Mild degenerative changes of the thoracic spine. No aggressive osseous
+lesion.
+Upper abdomen: Visualized liver, spleen, and adrenal glands are unremarkable.
+
+IMPRESSION:
+1. 9 mm spiculated right upper lobe nodule, increased from 6 mm. Given interval
+   growth and spiculated morphology, tissue sampling is recommended.
+2. No mediastinal or hilar lymphadenopathy.

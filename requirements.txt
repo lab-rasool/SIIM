@@ -1,0 +1,27 @@
+# SIIM Local LLMs Learning Lab — Python requirements
+#
+# The Lab 3 scripts (summarize_report.py, extract_pathology.py) use ONLY the
+# Python standard library on purpose — fewer moving parts during a live
+# workshop, and nothing to install behind a restrictive firewall. So for the
+# core exercises you do not strictly need anything here.
+#
+# The packages below are the rest of the workshop stack, matching the slides.
+# Install what you need:
+#
+#   pip install -r requirements.txt
+#
+# ---------------------------------------------------------------------------
+
+# Private, ChatGPT-style local interface (Lab 2). Needs Python 3.11.
+open-webui
+
+# High-throughput inference server for the "scaling up" section (slide 16).
+# Heavy; GPU strongly recommended. Comment out if you only run Ollama.
+# vllm
+
+# Optional: the official Ollama Python client, if you prefer it over the
+# tiny stdlib client in utils/ollama_client.py.
+# ollama
+
+# Note: Ollama itself is NOT a pip package — install the runtime from
+# https://ollama.com/download (Lab 0 / Lab 1).

@@ -1,0 +1,19 @@
+SYNTHETIC RADIOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-RAD-0004  |  Patient: SYNTHETIC, PATIENT D  |  MRN: 000-00-0004
+
+EXAM: CHEST RADIOGRAPH, TWO VIEWS (PA AND LATERAL)
+
+CLINICAL HISTORY: 72-year-old with productive cough and fever.
+
+TECHNIQUE: Frontal and lateral views of the chest.
+
+FINDINGS:
+There is a patchy area of airspace opacity in the right lower lobe consistent
+with pneumonia. No pleural effusion. No pneumothorax. The cardiomediastinal
+silhouette is within normal limits. No acute osseous abnormality. Visualized
+upper abdomen is unremarkable.
+
+IMPRESSION:
+1. Right lower lobe airspace opacity compatible with pneumonia. Recommend
+   clinical correlation and follow-up radiograph after treatment to ensure
+   resolution.

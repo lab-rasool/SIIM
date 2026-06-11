@@ -1,0 +1,23 @@
+SYNTHETIC RADIOLOGY REPORT — FOR EDUCATIONAL USE ONLY (NO PHI)
+Accession: SYN-RAD-0003  |  Patient: SYNTHETIC, PATIENT C  |  MRN: 000-00-0003
+
+EXAM: MRI BRAIN WITH AND WITHOUT CONTRAST
+
+CLINICAL HISTORY: 47-year-old with new-onset headaches and transient left-sided
+weakness.
+
+TECHNIQUE: Multiplanar, multisequence MRI of the brain before and after
+gadolinium administration.
+
+FINDINGS:
+There is a 2.1 cm rim-enhancing mass in the right frontal lobe with surrounding
+vasogenic edema and mild local mass effect on the adjacent sulci. No midline
+shift. No hydrocephalus. No restricted diffusion to suggest acute infarct.
+No abnormal susceptibility to suggest hemorrhage. The ventricles are normal in
+size. Major intracranial flow voids are preserved.
+
+IMPRESSION:
+1. 2.1 cm rim-enhancing right frontal mass with vasogenic edema. Differential
+   includes high-grade glioma versus solitary metastasis. Neurosurgical
+   consultation and perfusion imaging recommended.
+2. No acute infarct or hemorrhage.
