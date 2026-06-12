@@ -21,6 +21,9 @@ Examples
     # small vs. larger model outputs side by side")
     python summarize_report.py --compare llama3.2 qwen2.5:7b
 
+The original report text is printed above each impression so you can see the
+input and the model's output together. Add --no-report to print only the output.
+
 All data under data/radiology/ is SYNTHETIC. No PHI.
 """
 
@@ -58,6 +61,18 @@ REPORT:
 STRUCTURED IMPRESSION:"""
 
 
+def _section(title: str, body: str | None = None, width: int = 78) -> str:
+    """Format a labeled block: a title, a rule beneath it, then optional body.
+
+    Used to keep the lab output readable — the INPUT REPORT and each model's
+    IMPRESSION print under their own clearly labeled heading.
+    """
+    parts = [title, "-" * width]
+    if body is not None:
+        parts.append(body.strip("\n"))
+    return "\n".join(parts)
+
+
 def load_reports(target: str | None) -> list[tuple[str, str]]:
     if target:
         if not os.path.exists(target):
@@ -90,6 +105,11 @@ def main() -> None:
         help="Two model tags to compare side by side, e.g. --compare llama3.2 qwen2.5:7b",
     )
     ap.add_argument("--host", default=DEFAULT_HOST, help=f"Ollama host (default: {DEFAULT_HOST})")
+    ap.add_argument(
+        "--no-report",
+        action="store_true",
+        help="Hide the input report text; print only the model's impression.",
+    )
     args = ap.parse_args()
 
     models = args.compare if args.compare else [args.model]
@@ -97,18 +117,25 @@ def main() -> None:
         ensure_model(m, host=args.host)
 
     reports = load_reports(args.report)
+    show_report = not args.no_report
     print(f"\nLoaded {len(reports)} synthetic radiology report(s). Host: {args.host}\n")
 
     for name, text in reports:
         print("=" * 78)
         print(f"REPORT: {name}")
         print("=" * 78)
+
+        if show_report:
+            print()
+            print(_section("INPUT REPORT", text))
+
         for m in models:
-            print(f"\n--- Impression ({m}) ---")
+            print()
             try:
-                print(summarize(text, m, args.host))
+                body = summarize(text, m, args.host)
             except SystemExit as e:
-                print(e)
+                body = str(e)
+            print(_section(f"IMPRESSION ({m})", body))
         print()
 
 
