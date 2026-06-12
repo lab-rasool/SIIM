@@ -20,6 +20,9 @@ Examples
     # Use a larger model for tougher extraction
     python extract_pathology.py --model qwen2.5:7b
 
+The original report text is printed above each result so you can see the input
+and the extracted fields together. Add --no-report to print only the JSON.
+
 All data under data/pathology/ is SYNTHETIC. No PHI.
 """
 
@@ -78,6 +81,18 @@ PATHOLOGY REPORT:
 """
 
 
+def _section(title: str, body: str | None = None, width: int = 78) -> str:
+    """Format a labeled block: a title, a rule beneath it, then optional body.
+
+    Keeps the lab output readable — the INPUT REPORT and the EXTRACTED FIELDS
+    print under their own clearly labeled heading.
+    """
+    parts = [title, "-" * width]
+    if body is not None:
+        parts.append(body.strip("\n"))
+    return "\n".join(parts)
+
+
 def load_reports(target: str | None) -> list[tuple[str, str]]:
     if target:
         if not os.path.exists(target):
@@ -125,6 +140,11 @@ def main() -> None:
     ap.add_argument("--model", default="llama3.2", help="Ollama model tag (default: llama3.2)")
     ap.add_argument("--host", default=DEFAULT_HOST, help=f"Ollama host (default: {DEFAULT_HOST})")
     ap.add_argument("--out", help="Optional path to write a combined JSON array of results")
+    ap.add_argument(
+        "--no-report",
+        action="store_true",
+        help="Hide the input report text; print only the extracted JSON.",
+    )
     args = ap.parse_args()
 
     ensure_model(args.model, host=args.host)
@@ -132,19 +152,30 @@ def main() -> None:
     print(f"\nLoaded {len(reports)} synthetic pathology report(s). Model: {args.model}. Host: {args.host}\n")
 
     results = []
+    show_report = not args.no_report
     for name, text in reports:
         print("=" * 78)
         print(f"REPORT: {name}")
         print("=" * 78)
+
+        if show_report:
+            print()
+            print(_section("INPUT REPORT", text))
+
         obj, raw = extract(text, args.model, args.host)
+
         if obj is None:
-            print("[!] Model did not return valid JSON. Raw output:\n")
-            print(raw)
+            print()
+            print(_section(
+                f"EXTRACTED FIELDS ({args.model})",
+                "[!] Model did not return valid JSON. Raw output:\n\n" + raw,
+            ))
             results.append({"_source": name, "_error": "invalid_json", "_raw": raw})
             print()
             continue
 
-        print(json.dumps(obj, indent=2))
+        print()
+        print(_section(f"EXTRACTED FIELDS ({args.model})", json.dumps(obj, indent=2)))
         warnings = validate(obj)
         if warnings:
             print("\n  VALIDATION WARNINGS:")
