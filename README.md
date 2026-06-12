@@ -63,6 +63,15 @@ open-webui serve              # then open http://localhost:8080
 OpenWebUI auto-detects everything Ollama has pulled. Accounts and chats stay
 on your machine.
 
+If your institutional laptop doesn't allow the HuggingFace model, please use the following:
+
+```bash
+ollama pull nomic-embed-text
+export RAG_EMBEDDING_ENGINE=ollama
+export RAG_EMBEDDING_MODEL=nomic-embed-text
+open-webui serve
+```
+
 ## Lab 3 — Clinical text workflows
 
 These scripts use **only the Python standard library** — no `pip install`
